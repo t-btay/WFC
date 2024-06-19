@@ -106,8 +106,8 @@ public class Main {
 
     //build recursive methods here for every tile type. After a random un-collapsed tile is picked then it will go through each tile method in order.
     // reef: should have  a maximum reef size it doesn't exceed, should have reef integrity(reef parts attached to other reef parts without holes. Size can be random withing max size constraint.)
-    // kelp: should have sand for at least one of its neighbors. Should be a mx number of kelp patches in the entire grid depending on grid size (e.g. 10% or less?)
-    // fish: should have sand or kelp for at least one of its borders(not surrounded on all sides by reef). Max number depending on grid size (20%?)
+    // kelp: should be placed in between reefs on a sand/high entropy square.
+    // fish: should be placed in between reefs and kelp on a sand/high entropy square.
     // sand: all leftover tiles wll be sand.
 
     //later: add weighting system to random selection to simulate fish  behavior (preferring to be near kelp or holes in reef as "hiding spots" more than out in the open, or to be near other fish maybe? away from predators, etc.)
